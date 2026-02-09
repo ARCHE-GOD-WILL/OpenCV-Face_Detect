@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "opencv-toolkit"
+version = "2.0.0"
+description = "基于 OpenCV 4.x 的计算机视觉工具包：人脸检测/比较、图像增强、线条检测、倾斜校正、印章检测"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.12"
+authors = [
+    {name = "OpenCV-Face_Detect Contributors"},
+]
+keywords = ["opencv", "face-detection", "face-recognition", "image-processing", "computer-vision"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+]
+
+dependencies = [
+    "opencv-python>=4.8.0",
+    "numpy>=1.26.0",
+    "face-recognition>=1.3.0",
+    "dlib>=19.24.0",
+    "Pillow>=10.0.0",
+    "scipy>=1.11.0",
+    "scikit-image>=0.22.0",
+    "imutils>=0.5.4",
+    "matplotlib>=3.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "ruff>=0.4.0",
+    "mypy>=1.8.0",
+]
+
+[project.urls]
+Repository = "https://github.com/user/OpenCV-Face_Detect"
+
+[tool.setuptools.packages.find]
+include = ["opencv_toolkit*"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "A", "C4", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
