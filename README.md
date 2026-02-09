@@ -14,6 +14,13 @@
 | **倾斜校正** | 自动检测并校正文档倾斜 | `SkewCorrector` |
 | **印章检测** | 检测矩形和圆形印章 | `StampDetector` |
 
+## 演示视频
+
+| 演示 | 文件路径 |
+|------|----------|
+| **Veo 生成演示** | [`demo_assets/veo_demo_final.mp4`](demo_assets/veo_demo_final.mp4) |
+| **实拍演示** | [`demo_assets/real_demo_0.mp4`](demo_assets/real_demo_0.mp4) |
+
 ## 环境要求
 
 - Python >= 3.12
@@ -164,8 +171,7 @@ OpenCV-Face_Detect/
 │   └── image_processing.py
 ├── data/                      # 模型数据
 │   └── haarcascade_frontalface_default.xml
-├── FaceDetect/                # [Legacy] 旧版代码（保留供参考）
-├── Demo/                      # [Legacy] 旧版演示代码（保留供参考）
+├── demo_assets/               # 演示视频资源
 ├── requirements.txt           # Python 依赖
 ├── pyproject.toml             # 项目配置
 ├── .gitignore

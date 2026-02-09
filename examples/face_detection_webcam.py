@@ -2,7 +2,7 @@
 """示例：使用摄像头进行实时人脸检测。
 
 Usage:
-    python -m examples.face_detection_webcam --image sample.jpg --name "John Doe"
+    python -m examples.face_detection_webcam --image sample.jpg --name "张三"
 """
 
 from __future__ import annotations

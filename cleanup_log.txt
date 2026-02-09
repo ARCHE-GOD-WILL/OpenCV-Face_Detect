@@ -1,0 +1,19 @@
+所有修改已完成。以下是变更总结：
+
+**1. 移除旧文件夹引用（README.md）**
+- 删除了项目结构中 `FaceDetect/` 和 `Demo/` 两行 `[Legacy]` 条目
+- 替换为 `demo_assets/  # 演示视频资源`
+
+**2. Docstring 中文一致性（face_detection_webcam.py）**
+- 第5行 Usage 示例中 `"John Doe"` → `"张三"`
+- 其余13个 Python 文件的 docstring 已全部是中文，无需修改
+
+**3. 添加演示视频链接（README.md）**
+- 在"功能特性"和"环境要求"之间新增"演示视频"章节
+- 包含 `demo_assets/veo_demo_final.mp4` 和 `demo_assets/real_demo_0.mp4` 的表格链接
+
+**4. PEP8 合规性**
+- 所有 Python 文件行长度均在100字符以内，符合 PEP8
+- 导入分组、空行、缩进等均无问题
+
+> 注意：`demo_assets/real_demo_0.mp4` 当前不存在于目录中（仅有 `veo_demo_final.mp4`、`veo_demo_safe.mp4`、`veo_demo_legacy.json`），链接已按要求添加，后续需补充该文件。
