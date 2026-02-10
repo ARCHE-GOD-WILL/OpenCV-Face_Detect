@@ -209,3 +209,20 @@ pytest
 ## 许可证
 
 MIT License
+
+## Web UI (Streamlit)
+
+A web interface is available for testing face detection and landmark visualization.
+
+### Usage
+
+```bash
+streamlit run app.py
+```
+
+### Features
+
+- **Upload Image**: Supports JPG/PNG.
+- **Model Selection**: Switch between HOG (CPU) and CNN (GPU/Accurate) models.
+- **Visual Options**: Toggle bounding boxes and facial landmarks.
+- **Customization**: Adjust colors and line thickness.
